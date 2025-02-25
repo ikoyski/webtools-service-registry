@@ -16,7 +16,7 @@ spec:
       containers:
       - name: webtools-service-registry
         image: "ikoyski/webtools-service-registry:latest"
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
           - containerPort: 8188
 ---
