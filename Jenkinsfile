@@ -8,7 +8,7 @@ pipeline {
         K8S_HOST_IP = credentials('K8s-Host-IP') //username and ip
             
         DOCKERHUB_IMAGE = 'ikoyski/webtools-service-registry:latest'        
-        DEPLOYMENT_FILENAME = 'Deploy-webtools-service-registry.yaml'
+        DEPLOYMENT_FILENAME = 'Deploy-webtools-service-registry-private.yaml'
     }
     stages {
         stage('Git Stuff') {

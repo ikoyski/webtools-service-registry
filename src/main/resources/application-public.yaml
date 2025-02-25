@@ -1,0 +1,15 @@
+server:
+  port: 8288
+
+spring:
+  application:
+    name: webtools-service-registry
+
+eureka:
+  instance:
+    hostname: webtools-service-registry.onrender.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
