@@ -30,13 +30,13 @@ pipeline {
             }
         }
         stage('Docker Stuff') {
-            steps {
+            /*steps {
                 script {
-                    //sh 'docker build -t $DOCKERHUB_IMAGE .'
-                    //sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-                    //sh 'docker push $DOCKERHUB_IMAGE'
+                    sh 'docker build -t $DOCKERHUB_IMAGE .'
+                    sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+                    sh 'docker push $DOCKERHUB_IMAGE'
                 }
-            }
+            }*/
         }
         stage('K8s Stuff') {
         	steps {        		
